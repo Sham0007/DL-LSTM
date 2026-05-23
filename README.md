@@ -178,8 +178,8 @@ def evaluate_model(model, test_loader, X_test, y_test):
 train_losses, val_losses = train_model(model, train_loader, test_loader, loss_fn, optimizer, epochs=3)
 evaluate_model(model, test_loader, X_test, y_test)
 # Plot loss
-print('Name: DEEPIKA R')
-print('Register Number: 212223230038')
+print('Name: SARAVANAN SHAM PRAKASH')
+print('Register Number: 212224230254')
 history_df = pd.DataFrame({"loss": train_losses, "val_loss": val_losses})
 history_df.plot(title="Loss Over Epochs")
 plt.xlabel("Epoch")
@@ -194,8 +194,8 @@ output = model(sample)
 preds = torch.argmax(output, dim=-1).squeeze().cpu().numpy()
 true = y_test[i].numpy()
 
-print('Name: DEEPIKA R')
-print('Register Number: 212223230038')
+print('Name: SARAVANAN SHAM PRAKASH')
+print('Register Number: 212224230254')
 print("{:<15} {:<10} {}\n{}".format("Word", "True", "Pred", "-" * 40))
 for w_id, true_tag, pred_tag in zip(X_test[i], y_test[i], preds):
     if w_id.item() != word2idx["ENDPAD"]:
@@ -209,11 +209,11 @@ for w_id, true_tag, pred_tag in zip(X_test[i], y_test[i], preds):
 
 ## Loss Vs Epoch Plot
 
-<img width="587" height="504" alt="image" src="https://github.com/user-attachments/assets/1f523733-ec83-4bf6-a18d-1f448f55e867" />
+<img width="710" height="569" alt="image" src="https://github.com/user-attachments/assets/3a6f06bc-c7ad-4121-a970-ab4ea7c93880" />
 
 
 ### Sample Text Prediction
-<img width="288" height="400" alt="image" src="https://github.com/user-attachments/assets/030f1a2f-e800-4074-b29f-32e7a1019536" />
+<img width="348" height="452" alt="image" src="https://github.com/user-attachments/assets/6f5a0d57-1429-4fda-985b-392443001d4f" />
 
 
 ## RESULT
